@@ -1,10 +1,10 @@
 import React from "react";
 import BlogCard from "../components/ServiceCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import TestimonialSlider from "../components/TestimonialSlider";
 
 const Home = () => {
   const blogs = [
@@ -45,84 +45,68 @@ const Home = () => {
       desc: "Learn various UI UX Design materials including UX Research, UI Design, UX Writing, and Product Design for 4.5 months with professionals  product designer practitioners.",
     },
   ];
-  const testimonials = [
-    {
-      name: "Aarav Patel",
-      role: "UI Designer",
-      img: "/user1.jpg",
-      comment:
-        "WOC helped me improve my design skills and land my first freelance project.",
-    },
-    {
-      name: "Neha Sharma",
-      role: "Frontend Developer",
-      img: "/user2.jpg",
-      comment:
-        "The courses are well structured and easy to follow. Highly recommended!",
-    },
-  ];
 
   return (
     <>
-      <section className="grid grid-cols-1 md:grid-cols-6 gap-8 px-6 md:px-16 py-14">
-        <div className="md:col-span-3 flex flex-col justify-center text-center md:text-left space-y-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-wide text-primary">
-            Search and find <br />
-            your best{" "}
-            <span className="underline decoration-blue-600">courses</span>
-            <br />
-            with easy way
-          </h1>
+      <section className="section">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-8 container">
+          <div className="md:col-span-3 flex flex-col justify-center text-center md:text-left gap-6">
+            <h1>
+              Search and find your best{" "}
+              <span className="underline decoration-button">courses</span>
+              <span> with easy way</span>
+            </h1>
 
-          <p className="text-gray-600 text-sm sm:text-base max-w-lg mx-auto md:mx-0 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            eligendi dolor praesentium ex odit qui quos. Minus asperiores
-            similique rem autem libero, vero dolores maiores cumque saepe, ex
-            porro perspiciatis?
-          </p>
+            <p className="mx-auto md:mx-0 max-w-lg hidden sm:block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              eligendi dolor praesentium ex odit qui quos. Minus asperiores
+              similique rem autem libero, vero dolores maiores cumque saepe, ex
+              porro perspiciatis?
+            </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-            <button className="text-white bg-blue-600 hover:bg-blue-700 transition rounded-md px-7 py-2.5">
-              Join us now!
-            </button>
-            <span className="cursor-pointer underline underline-offset-4 hover:text-blue-600 transition">
-              See all plans
-            </span>
+            <div className="flex flex-row items-center justify-center md:justify-start gap-4">
+              <button className="text-white bg-button hover:bg-blue-700 transition rounded-md px-4 py-1 md:px-7 md:py-2.5 font-jakarta">
+                Join us now!
+              </button>
+              <span className="cursor-pointer underline underline-offset-4 hover:text-button transition font-jakarta">
+                See all plans
+              </span>
+            </div>
           </div>
-        </div>
 
-        <div className="md:col-span-3 flex justify-center items-center">
-          <div className="relative w-full max-w-md lg:max-w-lg">
-            <img
-              src="homeimage.png"
-              alt="Home Page"
-              className="w-full object-contain"
-            />
+          <div className="md:col-span-3 flex justify-center items-center">
+            <div className="relative w-full max-w-md lg:max-w-lg">
+              <img
+                src="homeimage.png"
+                alt="Home Page"
+                className="w-full object-contain"
+              />
 
-            <img
-              src="star.png"
-              alt=""
-              className="absolute bottom-[8%] left-[5%] w-16 sm:w-20 md:w-24 z-10"
-            />
+              <img
+                src="star.png"
+                alt=""
+                className="absolute bottom-[8%] left-[5%] w-16 sm:w-20 md:w-24 z-10"
+              />
 
-            <img
-              src="star.png"
-              alt=""
-              className="absolute top-[6%] right-[6%] w-16 sm:w-20 md:w-24 z-10"
-            />
+              <img
+                src="star.png"
+                alt=""
+                className="absolute top-[6%] right-[6%] w-16 sm:w-20 md:w-24 z-10"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="my-14">
-        <div className="flex flex-col items-center bg-[#F5F8FE] py-14 px-6 text-center gap-15">
-          <div>
-            <h1 className="text-2xl sm:text-4xl md:text-5xl text-primary leading-tight font-bold max-w-4xl">
+      <section className="bg-[#F5F8FE] section">
+        <div className="flex flex-col items-center  py-14 px-6 text-center gap-15 container">
+          <div className="flex flex-col gap-4 md:gap-6">
+            <h2>
               <span className="md:block">Collaborate with 100+</span>
               leading universities and companies
-            </h1>
+            </h2>
 
-            <p className="mt-4 text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto">
               WOC has contributed to students so that they can work in their
               dream company. We will continue to stick to our commitment to
               create an advanced generation.
@@ -145,13 +129,13 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="my-20 px-6 md:px-16 lg:px-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-28 items-center">
+      <section className="section">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-28 items-center container">
           <div className="relative flex justify-center">
             <img
               src="homeimg2.png"
               alt="Home Image"
-              className="w-full max-w-md"
+              className="w-full max-w-md shadow-lg rounded-md"
             />
             <img
               src="star.png"
@@ -160,14 +144,14 @@ const Home = () => {
             />
           </div>
 
-          <div className="flex flex-col gap-10 items-start">
+          <div className="flex flex-col gap-10 items-center md:items-start text-center md:text-left">
             <div className="flex flex-col gap-6">
-              <h1 className="text-2xl sm:text-3xl md:text-5xl text-primary font-semibold leading-tight">
+              <h2>
                 We are committed to helping you in the process of achieving your
                 dreams
-              </h1>
+              </h2>
 
-              <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+              <p>
                 Lorem ipsum dolor sit amet consectetur. Nibh proin proin eget
                 neque. Tortor tempus massa dui viverra in justo gravida. At
                 justo eget volutpat leo fermentum scelerisque cursus sit donec.
@@ -176,18 +160,16 @@ const Home = () => {
               </p>
             </div>
 
-            <button className="bg-button text-white px-6 py-2.5 rounded-md hover:opacity-90 transition">
+            <button className="bg-button text-white px-6 py-2.5 rounded-md shadow-lg font-jakarta">
               See detail
             </button>
           </div>
         </div>
       </section>
 
-      <section className="mt-52 mb-10 px-6 md:px-16 lg:px-32">
-        <div className="flex flex-col gap-20 justify-center items-center">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl text-primary font-semibold leading-tight text-center">
-            Our best courses for you
-          </h1>
+      <section className="section">
+        <div className="flex flex-col gap-15 justify-center items-center container">
+          <h2>Our best courses for you</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-6xl w-full">
             {blogs.map((blog) => (
@@ -202,16 +184,19 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="my-20 px-6 md:px-16 lg:px-32">
-        <div className="grid grid-cols-1 md:grid-cols-[30%_70%] gap-10 max-w-6xl mx-auto items-start">
-          <div className="flex flex-col gap-6">
-            <img src="/comment.svg" className="w-12" />
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">
-              What they say <br /> about WOC
-            </h2>
-            <p className="text-gray-500 text-sm">
-              More than 3000 users have been helped by World Online Course.
-            </p>
+      <section className="section">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto items-start container">
+          <div className="col-span-1">
+            <div className="flex flex-col gap-6">
+              <img src="/comment.svg" className="w-12" />
+              <h2 className="">what they say about WOC</h2>
+              <p>
+                More than 3000 users have been helped by World Online Course.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-2">
+            <TestimonialSlider />
           </div>
         </div>
       </section>

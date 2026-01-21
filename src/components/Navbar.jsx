@@ -9,32 +9,32 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         <img src="image.png" alt="Company logo" className="h-10 w-auto" />
 
-        <ul className="hidden md:flex space-x-10 text-gray-700 font-medium">
+        <ul className="hidden md:flex space-x-10 text-gray-700 font-medium font-jakarta">
           <li>
-            <Link to="/" className="hover:text-blue-600">
+            <Link to="/" className="hover:text-button">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-blue-600">
+            <Link to="/about" className="hover:text-button">
               About
             </Link>
           </li>
           <li>
-            <Link to="/blog" className="hover:text-blue-600">
+            <Link to="/blog" className="hover:text-button">
               Blog
             </Link>
           </li>
           <li>
-            <Link to="/service" className="hover:text-blue-600">
+            <Link to="/service" className="hover:text-button">
               Service
             </Link>
           </li>
         </ul>
 
-        <button className="hidden md:flex bg-blue-600 text-white px-4 py-2.5 rounded-md">
+        <Link to="/contact" className="hidden md:flex bg-button text-white px-4 py-2.5 rounded-md font-jakarta">
           Contact Us
-        </button>
+        </Link>
 
         <button
           onClick={() => setOpen(!open)}
@@ -67,9 +67,9 @@ const Navbar = () => {
                 Service
               </Link>
             </li>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md w-full">
+            <Link to="/contact" className="bg-button text-white px-4 py-2 rounded-md w-full shadow-lg">
               Contact Us
-            </button>
+            </Link>
           </ul>
         </div>
       )}

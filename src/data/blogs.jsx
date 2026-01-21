@@ -2,6 +2,7 @@ export const blogs = [
   {
     id: 1,
     tag: "Design",
+    img: "/blog.jpg",
     title: "UI Design Principles",
     desc: "Learn the core UI design principles that help you create beautiful and usable interfaces.",
     author: "Kavya Shah",
@@ -12,6 +13,7 @@ export const blogs = [
   {
     id: 2,
     tag: "Development",
+    img: "/blog.jpg",
     title: "React Best Practices",
     desc: "Understand how to write clean, scalable, and maintainable React applications.",
     author: "John Doe",
@@ -22,6 +24,7 @@ export const blogs = [
   {
     id: 3,
     tag: "Career",
+    img: "/blog.jpg",
     title: "How to Become a Product Designer",
     desc: "A step-by-step guide to building a strong career in product design.",
     author: "Jane Smith",

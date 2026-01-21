@@ -66,21 +66,23 @@ const Service = () => {
   ];
   return (
     <>
-      <section className="my-8 px-6 md:px-16 lg:px-32">
-        <div className="flex flex-col gap-20 justify-center items-center">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl text-primary font-semibold leading-tight text-center">
-            Our best courses for you
-          </h1>
+      <section className="section">
+        <div className="container">
+          <div className="flex flex-col gap-20 justify-center items-center">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl text-primary font-semibold leading-tight text-center font-jakarta">
+              Our best courses for you
+            </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-6xl w-full">
-            {services.map((services) => (
-              <ServiceCard
-                key={services.id}
-                img={services.img}
-                title={services.title}
-                desc={services.desc}
-              />
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-6xl w-full">
+              {services.map((services) => (
+                <ServiceCard
+                  key={services.id}
+                  img={services.img}
+                  title={services.title}
+                  desc={services.desc}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>

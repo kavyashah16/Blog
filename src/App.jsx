@@ -7,12 +7,12 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import Service from "./pages/Service";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-
 
       <main className="grow">
         <Routes>
@@ -21,6 +21,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
 
