@@ -5,7 +5,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b-2 border-gray-100">
+    <nav className="bg-white border-b-2 border-gray-100 sticky top-0 z-50">
       <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         <img src="image.png" alt="Company logo" className="h-10 w-auto" />
 

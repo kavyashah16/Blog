@@ -1,5 +1,10 @@
 import React from "react";
 import BlogCard from "../components/ServiceCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const Home = () => {
   const blogs = [
@@ -40,6 +45,23 @@ const Home = () => {
       desc: "Learn various UI UX Design materials including UX Research, UI Design, UX Writing, and Product Design for 4.5 months with professionals  product designer practitioners.",
     },
   ];
+  const testimonials = [
+    {
+      name: "Aarav Patel",
+      role: "UI Designer",
+      img: "/user1.jpg",
+      comment:
+        "WOC helped me improve my design skills and land my first freelance project.",
+    },
+    {
+      name: "Neha Sharma",
+      role: "Frontend Developer",
+      img: "/user2.jpg",
+      comment:
+        "The courses are well structured and easy to follow. Highly recommended!",
+    },
+  ];
+
   return (
     <>
       <section className="grid grid-cols-1 md:grid-cols-6 gap-8 px-6 md:px-16 py-14">
@@ -176,6 +198,20 @@ const Home = () => {
                 desc={blog.desc}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="my-20 px-6 md:px-16 lg:px-32">
+        <div className="grid grid-cols-1 md:grid-cols-[30%_70%] gap-10 max-w-6xl mx-auto items-start">
+          <div className="flex flex-col gap-6">
+            <img src="/comment.svg" className="w-12" />
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              What they say <br /> about WOC
+            </h2>
+            <p className="text-gray-500 text-sm">
+              More than 3000 users have been helped by World Online Course.
+            </p>
           </div>
         </div>
       </section>
