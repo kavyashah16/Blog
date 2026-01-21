@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@theme {
+  --color-primary: #1c1c1c;
+  --color-button: #1B1AFF;
+  --color-card: #F5F8FE;
+}
